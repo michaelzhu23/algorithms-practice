@@ -9,3 +9,15 @@ function checkPalindrome(inputString) {
   }
   return isPalindrome;
 }
+
+function checkPalindrome2(inputString) {
+  let reversedString = "";
+  for (let i = inputString.length - 1; i >= 0; i--) {
+    reversedString += inputString[i]
+  }
+  if (reversedString === inputString) {
+    return true;
+  } else {
+    return false;
+  }
+}
