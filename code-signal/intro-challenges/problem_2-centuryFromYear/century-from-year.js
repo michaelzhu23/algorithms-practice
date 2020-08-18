@@ -5,3 +5,7 @@ function centuryFromYear(year) {
   }
   return century;
 }
+
+function centuryFromYear2(year) {
+  return Math.ceil(year / 100)
+}
