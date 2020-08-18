@@ -1,13 +1,13 @@
 function checkPalindrome(inputString) {
-  let isPalindrome;
+  // loop thru string and check letter on opposite ends to see if they're equal
+  // if equal, continue loop. else return false
+  // if loop finishes, return true because string is palindrome since loop did not return false
   for (let i = 0, j = inputString.length - 1; i < inputString.length; i++, j--) {
     if (inputString[i] !== inputString[j]) {
       return false;
-    } else {
-      isPalindrome = true;
     }
   }
-  return isPalindrome;
+  return true;
 }
 
 function checkPalindrome2(inputString) {
@@ -23,5 +23,5 @@ function checkPalindrome2(inputString) {
 }
 
 function checkPalindrome3(inputString) {
-  return inputString == inputString.split('').reverse().join('');
+  return inputString === inputString.split('').reverse().join('');
 }
