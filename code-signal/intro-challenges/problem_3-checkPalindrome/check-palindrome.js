@@ -21,3 +21,7 @@ function checkPalindrome2(inputString) {
     return false;
   }
 }
+
+function checkPalindrome3(inputString) {
+  return inputString == inputString.split('').reverse().join('');
+}
