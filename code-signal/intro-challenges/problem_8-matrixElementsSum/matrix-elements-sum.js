@@ -42,6 +42,11 @@ function matrixElementsSum(matrix) {
 }
 
 function matrixElementsSum2(matrix) {
+  // declare variable for sum assigned to initial value of 0
+  // loop thru matrix vertically
+  // if value at current position = 0, break out of current loop so nothing else under gets add
+  // else add value at current position to sum variable
+  // return sum
   let sum = 0;
   for (let i = 0; i < matrix[0].length; i++) {
     for (let j = 0; j < matrix.length; j++) {
