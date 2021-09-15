@@ -11,5 +11,5 @@ const formData = {
 };
 
 function postNewComments(input, formData) {
-  // return array of objects with new comments
+  // return array of objects with new comments that still has all other properties
 }
